@@ -1,0 +1,367 @@
+/* edicion del contenedor padre */
+.basic {
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 150px 500px 300px 300px 200px 300px 150px;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+    justify-content: center;
+    grid-template-areas:
+        "header header header header header"
+        "nav    main1  main1  main1  main1 "
+        "nav    main2  main2  main2  main2"
+        "nav    main3  main3  main3  main3 "
+        "nav    main4  main4  main4  main4 "
+        "nav    main5  main5  main5  main5"
+        "footer footer footer footer footer";
+}
+
+
+
+/* edicion del contenedor header */
+.basic header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+#im1 {
+    height: 100px;
+    width: 250px;
+    background-image: url(imagenes/baciudad.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 25px;
+    float: left;
+    }
+
+#im2 {
+    margin-top: 1cm;
+    margin-left: 5cm;
+    font-size: 25px;
+    height: 50px;
+    width: 500px;
+    float: left;
+    }
+
+.maquina-escribir {
+    
+    position: relative;
+
+    }
+.maquina-escribir::after{
+    content: "";
+    border-left : 3px solid 2px black;
+    background: aqua;
+    right: 0;
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    animation: maquinaescribir 2s infinite backwards steps(33);
+    
+    animation-iteration-count: 1;
+    }
+
+@keyframes maquinaescribir { 
+    from {width: 100%;}
+    to {width: 0%;}
+}
+
+.maquina-escribir2 {
+    
+    position: relative;
+
+    }
+.maquina-escribir2::after{
+    content: "";
+    border-left : 3px solid 2px black;
+    background: aqua;
+    right: 0;
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    animation: maquinaescribir2 2s infinite backwards steps(33);
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+    }
+
+@keyframes maquinaescribir2 { 
+    from {width: 100%;}
+    to {width: 0%;}
+}
+
+ 
+#im3 {
+    height: 100px;
+    width: 200px;
+    background-image: url(imagenes/1606791349939.jpg );
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: -10px;
+    float: right;
+}
+
+
+
+
+
+/* Edicion de barra de navegacion*/
+.basic nav {
+    grid-area: nav;
+    background-color: rgb(104, 37, 192);
+
+    display: block;
+    flex-direction: column;
+    position: relative;
+    right: 100%;
+    padding: 0.1em;
+    background-color: skyblue;
+    opacity: 60%;
+    
+ 
+    transform: translateX(0.5em);
+    transition: 1s transform;
+}
+
+/* deslizamiento de barrA NAV */
+nav:hover,
+nav:focus-within {
+    transform: translateX(100%);
+}
+
+/* config del enlace */
+a {
+    white-space: pre;
+    color: rgb(194, 9, 9);
+}
+
+/* config parrafos */
+.basic nav p {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* config boton enlace */
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+
+#b1 {
+        margin-top: 50px;
+    }
+
+
+
+/* Edicion seccion 1 principal*/
+/* presentacion */
+.basic .main1 {
+    grid-area: main1;
+    background-image: url(imagenes/Programador-De-Sistemas-Embebidos.jpg );
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    grid-column-end: span 4;
+}
+
+.basic .main1 h1 {
+    margin-top: 4cm;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.basic .main1 h2 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* desxcripcion gral */
+.basic .main2 {
+    border-radius: 20px;
+    padding: 30px;
+    text-align: justify;
+    font-size: 20px;
+    grid-area: main2;
+    background-color: rgb(7, 165, 60);
+}
+
+
+/* tecnologias usadas */
+.basic .main3 {
+    grid-area: main3;
+    background-color: rgb(54, 7, 165);
+}
+
+.basic .main3 div{
+    height: 100px; 
+    width: 100px;
+    margin: 20px;
+    border-width: thin ;
+    border-radius:  2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+#tech1, #tech2, #tech3, #tech4, #tech5, #tech6, #tech7 {
+    margin: 40px;
+    float: left;
+}
+
+#tech1 {
+    background-image: url(imagenes/html.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#tech2 {
+    background-image: url(imagenes/css.png );
+    background-size: 100% 100%;
+    background-position: center;
+}
+#tech3 {
+    background-image: url(imagenes/java.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+#tech4 {
+    background-image: url(imagenes/bootstrap.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+#tech5 {
+    background-image: url(imagenes/github.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+#tech6 {
+    background-image: url(imagenes/vue.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+#tech7 {
+    background-image: url(imagenes/python.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+
+
+
+ /* main 4 diseño listas */
+.basic .main4 {
+    grid-area: main4;
+    background-color: rgb(196, 64, 4);
+}
+#lista1, #lista2, #lista3, #lista4{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    line-height: 2;
+    font-size: 14px;
+    float: left;}
+
+
+/* main 5  */
+    .basic .main5 {
+         grid-area: main5;
+         background-color: rgb(61, 79, 117);
+    }
+    #videoMain5 {float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 100px;
+    } 
+    
+    #lista1 {float: left;}
+    #lista2 {float: left;}
+
+
+    #menu  {
+         list-style:none;
+         margin-left: 80px;
+         margin-top: 25px;
+    }
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; margin-right:-50px;}
+#menu input[name="list1"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:10px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+
+
+#mapa {
+    float:right;
+    margin-top: 25px;
+    margin-right: 40px;
+    
+} 
+
+
+
+
+/* diseño footer */
+
+.basic footer {
+    grid-area: footer;
+    background-color: rgb(161, 127, 31);
+}
+ 
+#imagenfooter {
+    height: 50px; 
+    width: 300px;
+    margin: 20px;
+    margin-top: 10px;
+   
+    border-radius: 5px;
+    background-image: url(imagenes/ciudad-ba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    float: right;
+}
+
+#nota {
+    position: relative;
+    top: -50px;
+    left: 350px;
+    height: 50px; 
+    width: 300px;
+    margin: 20px;
+    margin-top: 100px;
+    border-radius:  2px;
+    border-radius: 5px;
+    float: right;
+    padding: 5px;
+    text-align:center;
+}
+
+#datos {
+    text-shadow: 10px,10px,5px, black;
+    position: relative;
+    left: 10px;
+    height: 50px; 
+    width: 250px;
+    margin: 10px;
+    margin-top: -10px;
+    border-radius:  2px;
+    border-radius: 5px;
+    float: left;
+    padding: 5px;
+    text-align:left;
+}
+
