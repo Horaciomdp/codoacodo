@@ -3,7 +3,7 @@
 .basic {
     background-image: url(imagenes/fondobasic.jpg);                     /* fondo del contenedor */
     background-repeat: no-repeat;                                       /* quiero q se repita la imagen hasta cubrir ? */
-    background-size: cover ;                                            /* si no llega a cubri , que criterio aplico al fonda , en este caso que lo cubra por completo */
+    background-size:contain  ;                                            /* si no llega a cubri , que criterio aplico al fonda , en este caso que lo cubra por completo */
     display: grid;                                                      
     grid-template-rows: 150px 500px 300px 300px 200px 300px 150px;      /* distribucion del grid para filas */
     grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;                       /* distribucion del grid para columnas */  
