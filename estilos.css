@@ -205,10 +205,18 @@ a {
     text-align: justify;
     font-size: 20px;
     grid-area: main2;
-    background-color: rgb(7, 165, 60);
+    background-color: white;
+    opacity: 83%;
+}
+.basic .main2 p{
+    font-size: 1em;
+    font-family: 'roboto', sans-serif;                        /*tipografía texto*/
+    
 }
 
 
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* tecnologias usadas */
 .basic .main3 {
     grid-area: main3;
