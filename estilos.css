@@ -1,9 +1,10 @@
 /* SECCION PAGINA PRINCIPAL - AREA HORACIO */
+/* chicos voy a dejar comentado el trabajo de esta manera pueden saber que hace cada cosa -- acepto sugerencias ;)*/
 /* Edicion del contenedor padre */
 .basic {
     background-image: url(imagenes/fondobasic.jpg);                     /* fondo del contenedor */
     background-repeat: no-repeat;                                       /* quiero q se repita la imagen hasta cubrir ? */
-    background-size:contain  ;                                            /* si no llega a cubri , que criterio aplico al fonda , en este caso que lo cubra por completo */
+    background-size: cover;                                             /* si no llega a cubri , que criterio aplico al fonda , en este caso que lo cubra por completo */
     display: grid;                                                      
     grid-template-rows: 150px 500px 300px 300px 200px 300px 150px;      /* distribucion del grid para filas */
     grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;                       /* distribucion del grid para columnas */  
@@ -109,32 +110,34 @@
 
 /* Edicion de barra de navegacion*/
 .basic nav {
-    grid-area: nav;
-    background-color: rgb(104, 37, 192);
-
+    grid-area: nav;                             /* area a la que hago referencia */
     display: block;
     flex-direction: column;
     position: relative;
     right: 100%;
     padding: 0.1em;
-    background-color: skyblue;
-    opacity: 60%;
+    background-image: url(imagenes/barranav2.jpg);
+    background-repeat: no-repeat;                           /* no repite imagen */
+    background-size: cover;                                 /* cubre el area */
+    border-radius: 0.5em;                                   /* esquina redondeada sutil para restar agresividad */
+    opacity: 60%;                                           /* transparencia */
+
     
  
-    transform: translateX(0.5em);
-    transition: 1s transform;
+    transform: translateX(0.5em);                           /* posicion de la barra animada , 0.5 es porque quiero q este a un lateral pero que se pueda ver que hay algo, si pones 0.0 aca queda toda oculta (no se ve ni el borde) */
+    transition: 1s transform;                               /* tiempo que tarda el efecto de "barra movil" */
 }
 
 /* deslizamiento de barrA NAV */
 nav:hover,
 nav:focus-within {
-    transform: translateX(100%);
+    transform: translateX(100%);                             /* traslacion efecto, hasta donde llega la barra ? */
 }
 
 /* config del enlace */
 a {
     white-space: pre;
-    color: rgb(194, 9, 9);
+    color: rgb(255, 255, 255);
 }
 
 /* config parrafos */
@@ -145,18 +148,20 @@ a {
 
 /* config boton enlace */
 .boton {
-    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-    padding: 10px; /*espacio alrededor texto*/
-    background-color: #2e518b; /*color botón*/
-    color: #ffffff; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    text-transform: uppercase; /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-    border-radius: 50px; /*bordes redondos*/
+    border: 2px solid #ffffff;                                  /*anchura, estilo y color borde*/
+    padding: 10px;                                                  /*espacio alrededor texto*/
+    background-image: url(imagenes/button2.jpg);                                     /*color botón*/
+    background-repeat: no-repeat;                           /* no repite imagen */
+    background-position: center;                                 /* cubre el area */
+    text-decoration:rgb(255, 255, 255) ;                                       /*decoración texto*/
+    text-transform: uppercase;                                   /*capitalización texto*/
+    font-family: 'roboto', sans-serif;                        /*tipografía texto*/
+    border-radius: 50px;                                         /*bordes redondos*/
     }
 
 #b1 {
-        margin-top: 50px;
+        margin-top: 50px;                           /*separacion de botones */
+       
     }
 
 
