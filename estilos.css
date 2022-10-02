@@ -106,7 +106,7 @@
 
 
 
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Edicion de barra de navegacion*/
 .basic nav {
@@ -165,28 +165,34 @@ a {
     }
 
 
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 /* Edicion seccion 1 principal*/
 /* presentacion */
 .basic .main1 {
     grid-area: main1;
-    background-image: url(imagenes/Programador-De-Sistemas-Embebidos.jpg );
+    background-image: url(imagenes/fondodivmain1.jpg );
     background-repeat: no-repeat;
     border-radius: 20px;
     background-size: 100% 100%;
-    grid-column-end: span 4;
+    grid-column-end: span 4;                                    /* cantidad de columnas del grid establecido que son acupadas por este div */ 
+
+
 }
 
-.basic .main1 h1 {
-    margin-top: 4cm;
-    font-size: 60px;
+.basic .main1 h1 {                          /* propiedades del texto "programa codo a codo*/
+    margin-top: 2em;
+    font-size: 70px;
+    text-shadow: 2px 2px 1px black, 4px 4px 5px purple;             /* efecto de sombra*/
     color: white;
     text-align: center;
 }
 
-.basic .main1 h2 {
-    font-size: 20px;
+.basic .main1 h2 {                          /* propiedades del texto descriptivo */
+    font-size: 30px;
     color: white;
+    text-shadow: 2px 2px 1px black, 4px 4px 5px purple;      /* efecto de sombra*/
     text-align: center;
 }
 
