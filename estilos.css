@@ -220,8 +220,28 @@ a {
 /* tecnologias usadas */
 .basic .main3 {
     grid-area: main3;
-    background-color: rgb(54, 7, 165);
+    border-radius: 20px;
+    background-image: url(imagenes/tecnologias.jpg);
+    background-repeat: no-repeat;                           /* no repite imagen */
+    background-size :100%,100% ;                                 /* cubre el area */
+    opacity: 85%;
 }
+
+.basic .main3 h1 {
+    font-family: "roboto"  ;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px black, 4px 4px 5px purple;  
+    text-align: center;
+}
+.basic .main3 p {
+    font-family: "roboto"  ;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px black, 4px 4px 5px purple;  
+    text-align: center;
+}
+
 
 .basic .main3 div{
     height: 100px; 
@@ -234,62 +254,59 @@ a {
     border-radius: 10px;
 }
 #tech1, #tech2, #tech3, #tech4, #tech5, #tech6, #tech7 {
-    margin: 40px;
+    margin: 2em;
     float: left;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 #tech1 {
     background-image: url(imagenes/html.png);
-    background-size: 100% 100%;
-    background-position: center;
-}
+    margin-left: 5em;
+   }
 
 #tech2 {
     background-image: url(imagenes/css.png );
-    background-size: 100% 100%;
-    background-position: center;
-}
+    }
 #tech3 {
     background-image: url(imagenes/java.png);
-    background-size: 100% 100%;
-    background-position: center;
-}
+    }
 #tech4 {
     background-image: url(imagenes/bootstrap.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-}
+    }
 #tech5 {
     background-image: url(imagenes/github.png);
-    background-size: 100% 100%;
-    background-position: center;
-}
+    }
 #tech6 {
     background-image: url(imagenes/vue.png);
-    background-size: 100% 100%;
-    background-position: center;
-}
+    }
 #tech7 {
     background-image: url(imagenes/python.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-}
+   }
 
 
 
 
-
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
  /* main 4 diseño listas */
-.basic .main4 {
+
+ .basic .main4 {
     grid-area: main4;
-    background-color: rgb(196, 64, 4);
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
 }
 #lista1, #lista2, #lista3, #lista4{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;
+    font-size: 18px;
     line-height: 2;
-    font-size: 14px;
-    float: left;}
+    float: left;
+    margin-left: 5em;
+    }
+
+
+
+
 
 
 /* main 5  */
