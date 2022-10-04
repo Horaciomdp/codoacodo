@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* edicion del contenedor padre */
+.basic {
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 150px 500px 300px 300px 200px 300px 150px;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+    justify-content: center;
+    grid-template-areas:
+        "header header header header header"
+        "nav    main1  main1  main1  main1 "
+        "nav    main2  main2  main2  main2"
+        "nav    main3  main3  main3  main3 "
+        "nav    main4  main4  main4  main4 "
+        "nav    main5  main5  main5  main5"
+        "footer footer footer footer footer";
+}
+
+.basic header {
+    grid-area: header;
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.titulo{
+    margin-top: 20px;
+    font-family:'Roboto', sans-serif;
+}
+
+#logo1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#logo2 {
+    float: right;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+
+
+/* Edicion de barra de navegacion*/
+.basic nav {
+    grid-area: nav;
+    background-color: rgb(104, 37, 192);
+    display: block;
+    flex-direction: column;
+    position: relative;
+    right: 100%;
+    padding: 0.1em;
+    background-color: skyblue;
+    opacity: 60%;
+    transform: translateX(0.5em);
+    transition: 1s transform;
+}
+
+/* deslizamiento de barrA NAV */
+nav:hover,
+nav:focus-within {
+    transform: translateX(100%);
+}
+
+/* config del enlace */
+a {
+    white-space: pre;
+    color: rgb(194, 9, 9);
+}
+
+/* config parrafos */
+.basic nav p {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* config boton enlace */
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+
+#b1 {
+        margin-top: 50px;
+    }
+
+    /* Edicición de las cajas */
+.main01 {
+        grid-area: main1;
+        width: 100%;
+        background-image: url(/imagenes/codo-a-codo-inscripcion.jpg);
+        border-radius: 20px;
+        background-size: 100% 100%;
+    }
+
+.main1-enlaces {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+    
+
+.e-1 {
+    display: inline-flex;
+    align-items: center;
+	width: 100%;
+    height: 80x;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+    text-decoration: none;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+}
+
+.e-1 span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.e-1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #c4b187;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    transition: .5s ease-in-out all ;
+}
+
+.e-1:hover::after {
+    top: 0;
+}
+
+
+.main02 {
+        grid-area: main2;
+        width: 100%;
+        background-color: yellow;
+    }
+
+#historia {
+    display: flex;
+    height: 18.75rem;
+}
+
+
+.p-izquierda {
+    background-color:rgb(104, 37, 192);
+    background-size: 100% 100%;
+    width: 40%;
+}
+
+  
+.i-derecha {
+    background-image: url(/imagenes/i-derecha.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+   
+}
+.main03 {
+        grid-area: main3;
+        width: 100%;
+        background-color: red; 
+        
+    }
+#testimonios {
+    display: flex;
+    height: 18.75rem;
+}
+    
+    
+.p-izquierda {
+    background-color:rgb(104, 37, 192);
+    background-size: 100% 100%;
+    width: 40%;
+}
+    
+#videoMain03 {
+        float: right;
+        margin-top: 25px;
+        margin-left: 200px;
+        margin-right: 100px;
+    } 
+ 
+
+.main04 {
+        grid-area: main4;
+        width: 100%;
+        background-color: green;
+    }
+
+.main05 {
+        grid-area: main5;
+        width: 100%;
+        background-color: brown;
+    }
+    
+#contacto {
+        display: flex;
+        height: 18.75rem;
+       
+    }
+.contact {
+    text-align: center;
+}
+
+
+/* Edición del footer */
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: grey;
+}
+
+#imagenfooter {
+    height: 50px; 
+    width: 300px;
+    margin: 20px;
+    margin-top: 10px;
+   
+    border-radius: 5px;
+    background-image: url(imagenes/ciudad-ba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    float: right;
+}
+
+#nota {
+    position: relative;
+    top: -50px;
+    left: 350px;
+    height: 50px; 
+    width: 300px;
+    margin: 20px;
+    margin-top: 110px;
+    border-radius:  2px;
+    border-radius: 5px;
+    float: right;
+    padding: 5px;
+    text-align:center;
+}
+
+#datos {
+    text-shadow: 10px,10px,5px, black;
+    position: relative;
+    left: 10px;
+    height: 50px; 
+    width: 250px;
+    margin: 10px;
+    margin-top: 0;
+    border-radius:  2px;
+    border-radius: 5px;
+    float: left;
+    padding: 5px;
+    text-align:left;
+}
+
