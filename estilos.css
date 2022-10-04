@@ -149,7 +149,8 @@ a {
 /* config boton enlace */
 .boton {
     border: 2px solid #ffffff;                                  /*anchura, estilo y color borde*/
-    padding: 10px;                                                  /*espacio alrededor texto*/
+    padding: 10px;
+                                                      /*espacio alrededor texto*/
     background-image: url(imagenes/button2.jpg);                                     /*color botón*/
     background-repeat: no-repeat;                           /* no repite imagen */
     background-position: center;                                 /* cubre el area */
@@ -161,8 +162,15 @@ a {
 
 #b1 {
         margin-top: 50px;                           /*separacion de botones */
-       
     }
+
+#obelisco{
+    height: 600px;
+    opacity: 100%;
+    background-image: url(imagenes/obelisco2.jpg);
+    background-repeat: no-repeat;                           /* no repite imagen */
+    background-position: center; 
+}    
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -258,6 +266,7 @@ a {
     float: left;
     background-size: 100% 100%;
     background-position: center;
+    
 }
 
 #tech1 {
