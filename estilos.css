@@ -25,7 +25,7 @@
 /* edicion del contenedor header */
 .basic header {
     grid-area: header;
-    background-color:  #e5be01;
+    background-color:  #ffffff;
 }
 
 #im1 {
@@ -34,12 +34,12 @@
     background-image: url(imagenes/baciudad.jpg);
     background-size: 100% 100%;
     background-position: center;
-    margin-top: 25px;
+    margin-top: 2em;
     float: left;
     }
 
 #im2 {
-    margin-top: 1cm;
+    margin-top: 0.5em;
     margin-left: 5cm;
     font-size: 25px;
     height: 50px;
@@ -55,7 +55,7 @@
 .maquina-escribir::after{
     content: "";
     border-left : 3px solid 2px black;
-    background: #e5be01;
+    background: #ffffff;
     right: 0;
     height: 40px;
     width: 10px;
@@ -78,7 +78,7 @@
 .maquina-escribir2::after{
     content: "";
     border-left : 3px solid 2px black;
-    background: #e5be01;
+    background: #ffffff;
     right: 0;
     height: 40px;
     width: 10px;
@@ -100,7 +100,7 @@
     background-image: url(imagenes/agencia.jpg );
     background-size: 100% 100%;
     background-position: center;
-    margin-top: -10px;
+    margin-top: 2em;
     float: right;
 }
 
@@ -292,9 +292,10 @@ a {
 
  .basic .main4 {
     grid-area: main4;
-    background-color: #ffffff;
+    background-color: #e5be01;
     border-radius: 20px;
     text-align: center;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px purple;
 }
 #lista1, #lista2, #lista3, #lista4{
     font-family: Helvetica, Arial, sans-serif;
@@ -308,11 +309,12 @@ a {
 
 
 
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* main 5  */
     .basic .main5 {
          grid-area: main5;
-         background-color: rgb(61, 79, 117);
+         border-radius: 20px;
+         background-color: rgba(41, 41, 41, 0.616);
     }
     #videoMain5 {float: left;
         margin-top: 25px;
@@ -323,6 +325,15 @@ a {
     #lista1 {float: left;}
     #lista2 {float: left;}
 
+    ul li {
+        
+        padding-left: 1rem;
+        
+        
+        
+    
+    }
+    
 
     #menu  {
          list-style:none;
@@ -352,12 +363,15 @@ a {
 
 
 
-
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* diseño footer */
 
 .basic footer {
     grid-area: footer;
-    background-color: rgb(161, 127, 31);
+    
+    background-image: url(imagenes/footerba3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
  
 #imagenfooter {
@@ -376,12 +390,13 @@ a {
 
 #nota {
     position: relative;
+    
     top: -50px;
     left: 350px;
     height: 50px; 
-    width: 300px;
+    width: 350px;
     margin: 20px;
-    margin-top: 100px;
+    margin-top: 90px;
     border-radius:  2px;
     border-radius: 5px;
     float: right;
@@ -390,13 +405,13 @@ a {
 }
 
 #datos {
-    text-shadow: 10px,10px,5px, black;
+   
     position: relative;
     left: 10px;
     height: 50px; 
     width: 250px;
-    margin: 10px;
-    margin-top: -10px;
+    margin: 5px;
+    margin-top: -20px;
     border-radius:  2px;
     border-radius: 5px;
     float: left;
@@ -404,3 +419,8 @@ a {
     text-align:left;
 }
 
+.basic footer p {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black, 1px 1px 1px purple; 
+}
