@@ -297,7 +297,7 @@ a {
     text-align: center;
     text-shadow: 1px 1px 1px white, 1px 1px 1px purple;
 }
-#lista1, #lista2, #lista3, #lista4{
+#lista1, #lista2, #lista3, #lista4 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 2;
@@ -322,17 +322,16 @@ a {
         margin-right: 100px;
     } 
     
-    #lista1 {float: left;}
-    #lista2 {float: left;}
-
-    ul li {
-        
-        padding-left: 1rem;
-        
-        
-        
     
-    }
+    #lista5{
+        color: #ffffff;
+        text-shadow: 1px 1px 2px black, 2px 2px 3px purple;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 2;
+        float: left;
+        margin-left: 0em;
+        }
     
 
     #menu  {
