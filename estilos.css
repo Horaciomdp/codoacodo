@@ -407,7 +407,7 @@ body {
 
 
 /*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS MEDIANAS (-600PX < X < 900PX ) ///////////////////////////*/
-@media (min-width: 600px) {
+@media (min-width: 600px) {                                   /* Formato del grid y distribucion para pantallas medianas */
   .grid-container {
     grid-template:
       "header  header" 150px
@@ -417,7 +417,7 @@ body {
       150px auto;
   }
 
-  .header div {
+  .header div {                                               /* Redimensionado de propiedades del header para pantallas medianas */   
     padding: 10px;
     height: 100px;
     width: 160px;
@@ -426,53 +426,45 @@ body {
 
 
 
-  .header .headerCtro {
+  .header .headerCtro {                                        /* Redimensionado de propiedades del header para pantallas medianas -REFIERE A TEXTO CON SPAN SIN ESTO SE CORRE EL EFECTO DEL SPAN ENTRE OTRAS COSAS- */
 
     border: 1px solid #e5be01;
     height: auto;
   }
 
-  .headerCtro p {
+  .headerCtro p {                                                /* Redimensionado de propiedades de tipografias para pantallas medianas */
     margin-top: 10px;
     width: 190px;
     font-size: 10px;
   }
 
-  .navbar {
-    grid-area: navbar;
-    background-color: #33a8a5;
-    display: flex;
-    flex-direction: row;
-    position: relative;
+  
 
-
-  }
-
-  .boton {
+  .boton {                                                       /* Redimensionado de propiedades de los botones para pantallas medianas */
     font-size: 15px;
   }
 
-  .main {
+  .main {                                                        /* Reformateo de propiedades de la division MAIN para pantallas medianas */
     grid-area: main;
     background-color: #f5f5f5;
   }
 
-  .main>div {
+  .main>div {                                                     /* Redimensionado de divisiones internas del MAIN para pantallas medianas */
     height: 270px;
   }
 
 
-  .main .uno h1 {
+  .main .uno h1 {                                                  /* Reformateo de las fuentes del MAIN para pantallas medianas */
     margin-top: 10px;
     font-size: 22px;
   }
 
-  .main .uno h2 {
+  .main .uno h2 {                                                   /* Reformateo de las fuentes del MAIN para pantallas medianas */
     margin-top: 15px;
     font-size: 14px;
   }
 
-  .main .uno p {
+  .main .uno p {                                                    /* Reformateo de las fuentes del MAIN para pantallas medianas */
     /* propiedades del texto descriptivo */
     color: white;
     font-size: 12px;
@@ -482,7 +474,7 @@ body {
   }
 
 
-  .main .dos {
+  .main .dos {                                                      /* Reformateo del cuerpo 2 del MAIN para pantallas medianas y grandes*/
     background-image: url(imagenes/barranav2.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -500,7 +492,7 @@ body {
   #lista1,
   #lista2,
   #lista3,
-  #lista4 {
+  #lista4 {                                                         /* Reformateo de las fuentes de la division 2 del MAIN para pantallas medianas */
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -510,11 +502,11 @@ body {
   }
 
 
-  .sidebar {
+  .sidebar {                                                         /* Cambio de fondo para pantallas medianas */
     background-image: url(imagenes/barranav.jpg);
   }
 
-  .sidebar div {
+  .sidebar div {                                                     /* Cambio de propiedades para pantallas medianas */
     display: inline-table;
     border: 1px solid red;
     padding: 15px;
@@ -524,7 +516,7 @@ body {
 
   }
 
-  .footer div {
+  .footer div {                                                       /* Cambio de propiedades de DIV FOOTER para pantallas medianas */
     display: inline-table;
     border: 1px solid white;
     border-radius: 10px;
@@ -535,7 +527,7 @@ body {
 
   }
 
-  .footerizq {
+  .footerizq {                                                          
     font-size: 14px;
     color: white;
     text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
@@ -561,7 +553,7 @@ body {
 /*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS GRANDES ( X>900PX ) /////////////////////////////////////*/
 @media (min-width: 900px) {
 
-  .grid-container {
+  .grid-container {                                   /* Diseño y logica de distribucion de las cajas en pantallas grandes */
     grid-template:
       "header  header header" 200px
       "navbar  main   sidebar" 850px
@@ -569,7 +561,7 @@ body {
       130px auto 200px;
   }
 
-  .header div {
+  .header div {                                        /* Configuracion divisiones header pantallas grandes */
     padding: 10px;
     height: 120px;
     width: 180px;
@@ -588,7 +580,7 @@ body {
     font-size: 18px;
   }
 
-  .maquina-escribir {
+  .maquina-escribir {                                   /* Reformateo del efecto span para pantallas grandes y evitar deformacion de la ubicacion del efecto */
 
     position: relative;
 
@@ -650,7 +642,7 @@ body {
 
 
 
-  .navbar {
+  .navbar {                                             /* Reorganizacion de la barra navegacion para pantallas grandes */
     grid-area: navbar;
 
     display: block;
@@ -668,34 +660,21 @@ body {
     opacity: 60%;
 
 
-    transform: translateX(0.5em);
+    transform: translateX(0.5em);                       /* Transformacion de deslizamiento de la barra -SOLO EN PANTALLAS GRANDES UTILIZADO EL CRITERIO QUE LAS DEMAS PANTALLAS SON TACTILES Y RARA VEZ SE LES CONECTA UN MOUSE LO QUE DIFICULTARIA SU APERTURA EN PANTALLAS PEQUEÑAS- */ 
     transition: 1s transform;
 
 
   }
 
   .navbar:hover,
-  nav:focus-within {
+  nav:focus-within {                                    /* propiedades de transformacion de la barra */
     transform: translateX(100%);
     opacity: 60%;
   }
 
 
-  /* config del enlace */
-  /*
-a {
-  white-space: pre;
-  color: rgb(194, 9, 9);
-}
-*/
-
-  /* config parrafos    
-p {
-  font-size: 2em;
-  text-align: center;
-}
-*/
-  /* config boton enlace */
+  
+                                                         /* config boton enlace */
   .boton {
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -733,7 +712,7 @@ p {
     background-position: center;
   }
 
-  .main {
+  .main {                                                /* Configuraciones generales del main -IMAGENES, TAMAÑOS, POSICIONES, ETC...- */
 
     grid-area: main;
     background-image: url(imagenes/vectorialazul.jpg);
@@ -764,7 +743,7 @@ p {
   #lista1,
   #lista2,
   #lista3,
-  #lista4 {
+  #lista4 {                                                 /* Adecucion de la fuente para lectura en pantalla grande */
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -775,7 +754,7 @@ p {
 
 
 
-  .sidebar div {
+  .sidebar div {                                              /* Adecuacion de tamaño del sidebar de pantallas grandes */
     display: inline-table;
     border: 1px solid red;
     padding: 15px;
@@ -788,7 +767,7 @@ p {
 
 
 
-  .footer div {
+  .footer div {                                               /* Configuracion del footer -TAMAÑO DE DIVS Y DATOS DE FUENTES PARA ADECUAR LECTURA- */
     display: inline-table;
     border: 1px solid red;
 
