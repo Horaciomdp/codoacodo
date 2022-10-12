@@ -11,20 +11,20 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;            /* fonts y configuraciones generales*/
   font-size: 1.2rem;
   min-height: 100%;
 }
 
 
 
-.grid-container {
-  background-image: url(imagenes/fondobasic.jpg );
-  background-repeat: no-repeat;
-  background-size: 100% 250%;
+.grid-container {                                        /* datos del grid tamaño pequeño */
+  background-image: url(imagenes/fondobasic.jpg );       /* datos de imagen de fondo */
+  background-repeat: no-repeat;                          /* se repite la imagen? */
+  background-size: 100% 250%;                            /* tamaño de la imagen */
   display: grid;
   gap: 5px;
-  grid-template:
+  grid-template:                                         /* distribucion del grid en tramaño pequeño */
     "header" 110px
     "navbar" 100px
     "main" 630px
@@ -32,14 +32,14 @@ body {
     "footer" 150px;
 }
 
-.grid-container>* {
+.grid-container>* {                                       /* formato general de todos los elementos interno al grid */
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   padding: 5px;
   text-align: center;
 }
 
-.header {
+.header {                                                 /* formato de fondo de imagen del header */ 
   grid-area: header;
   background-image: url(imagenes/vectorialblanco.jpg);
   background-position: center;
@@ -49,42 +49,41 @@ body {
   text-align: center;
 }
 
-.header div {
+.header div {                                             /* formato de los divisores internos al header */ 
   display: inline-table;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 15px;
-  height: 50px;
+  border: 1px solid white;                              /* estilo de borde */
+  border-radius: 5px;                                     /* radio del borde */
+  padding: 15px;                                          
+  height: 50px;                                 
   width: 60px;
   margin: 10px 5px;
 }
 
-.headerIzq {
+.headerIzq {                                              /* configuracion de formato logo buenos aires ciudad */
   background-image: url(imagenes/baciudad.jpg);
   background-size: 100% 100%;
   background-position: center;
   float: left;
 }
 
-.header .headerCtro {
+.header .headerCtro {                                     /* borde amarillo del divisor central del header */
   border: 1px solid #e5be01;
 
 
 }
 
-.headerCtro p {
+.headerCtro p {                                           /* tipo de texto del parrafo "header central" */
   width: 150px;
   font-size: 9px;
 }
 
-.maquina-escribir {
-  /* primer linea span */
-
+/* primer linea span */
+.maquina-escribir {                                       /* efecto maquina escribir , solo primera linea */
   position: relative;
 
 }
 
-.maquina-escribir::after {
+.maquina-escribir::after {                                 /* efecto maquina de escribir donde termina , si repite , etc para lograr efecto deseado */
   content: "";
   border-left: 3px solid 2px black;
   background: #ffffff;
@@ -93,11 +92,10 @@ body {
   width: 5px;
   position: absolute;
   animation: maquinaescribir 2s infinite backwards steps(33);
-
   animation-iteration-count: 1;
 }
 
-@keyframes maquinaescribir {
+@keyframes maquinaescribir {                              /* efecto de animacion 1 */
   from {
     width: 100%;
   }
@@ -107,13 +105,13 @@ body {
   }
 }
 
-.maquina-escribir2 {
+.maquina-escribir2 {                                      /* efecto maquina escribir , solo segunda linea */
 
   position: relative;
 
 }
 
-.maquina-escribir2::after {
+.maquina-escribir2::after {                               /* efecto maquina de escribir donde termina , si repite , etc para lograr efecto deseado */
   content: "";
   border-left: 3px solid 2px black;
   background: #ffffff;
@@ -126,7 +124,7 @@ body {
   animation-delay: 6s;
 }
 
-@keyframes maquinaescribir2 {
+@keyframes maquinaescribir2 {                               /* efecto de animacion 1 */
   from {
     width: 100%;
   }
@@ -137,7 +135,7 @@ body {
 }
 
 
-.headerDer {
+.headerDer {                                                /* configuracion de formato logo agencia de aprendizaje */
   background-image: url(imagenes/agencia.jpg );
   background-size: 100% 100%;
   background-position: center;
