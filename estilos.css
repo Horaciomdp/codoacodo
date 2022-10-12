@@ -145,7 +145,7 @@ body {
 
 
 
-.navbar {
+.navbar {                                                   /* configuracion de barra navegacion -fondo- */
   grid-area: navbar;
   background-image: url(imagenes/barranav2.jpg);
   background-position: center;
@@ -158,7 +158,7 @@ body {
 
 
 
-.boton {
+.boton {                                                 /* configuracion de botones  barra navegacion -DESCRIPCION RENGLON A RENGLON */
   margin-left: 20px;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -190,13 +190,13 @@ body {
 
 
 
-.main div {
+.main div {                                                /* division princilpal del cuerpo */
   height: 200px;
   margin: 3px;
 }
 
 
-.main .uno {
+.main .uno {                                                /* parte 1 -PROGRAMA CODO A CODO */
   background-image: url(imagenes/fondodivmain1.jpg );
   background-position: center;
   background-repeat: no-repeat;
@@ -234,7 +234,7 @@ body {
   /*tipografía texto*/
 }
 
-.main .dos {
+.main .dos {                                              /*  FORMATO TEXTO DE LOS CURSOS */
   background-color: white;
   opacity: 70%;
   text-align: center;
@@ -245,7 +245,7 @@ body {
   border-radius: 5px;
 }
 
-#lista1,
+#lista1,                                                   /* formato de tipografia de las listas */
 #lista2,
 #lista3,
 #lista4 {
@@ -259,7 +259,7 @@ body {
 
 
 
-.main .tres {
+.main .tres {                                               /* imagen del cuerpor de la tercera parte -MAPA Y VIDEO- */ 
   background-image: url(imagenes/images4.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ body {
 
 
 
-.video-box {
+.video-box {                                                /* Propiedades del video en pantalla pequeña */
 
   display: inline-block;
   padding-top: 0px;
@@ -283,7 +283,7 @@ body {
 
 
 
-.sidebar {
+.sidebar {                                                  /* Formato de barra lateral derecha -tecnologias usadas- */
   grid-area: sidebar;
   background-image: url(imagenes/tecnologias.jpg );
   background-position: center;
@@ -291,19 +291,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.sidebar h5 {
+.sidebar h5 {                                               /* Formato de los titulos del sidebar */
   font-size: 18px;
   color: white;
   text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
 }
 
-.sidebar p {
+.sidebar p {                                                 /* Formato de los parrafos dentro del sidebar */
   font-size: 12px;
   color: white;
   text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
 }
 
-.sidebar div {
+.sidebar div {                                               /* Propiedades de las divisiones internas del sidebar -DONDE VAN LAS IMAGENES- */
   display: inline-table;
   border: 1px solid red;
   padding: 15px;
@@ -319,14 +319,14 @@ body {
 #tech4,
 #tech5,
 #tech6,
-#tech7 {
+#tech7 {                                                      /* IMAGENES DE TECNOLOGIAS , FORMATO DEL CUADRO */
   background-size: 100% 100%;
   background-position: center;
   border-radius: 10px;
 
 }
 
-#tech1 {
+#tech1 {                                                      /* IMAGENS CORRESPONDIENTES A CADA TECNOLOGIA */
   background-image: url(imagenes/html.png);
 
 }
@@ -358,7 +358,7 @@ body {
 
 
 
-.footer {
+.footer {                                                       /* Footer configuracion del espacio general */
   grid-area: footer;
   background-image: url(imagenes/footerba.jpg );
   background-position: center;
@@ -366,7 +366,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.footer div {
+.footer div {                                                   /* Footer configuracion de las divisiones internas para las imagenes */
   display: inline-table;
   border: 1px solid white;
   border-radius: 10px;
@@ -377,18 +377,18 @@ body {
 
 }
 
-.footerizq h4 {
+.footerizq h4 {                                                   /* Formato tipografia titulo del footer */
   font-size: 14px;
 }
 
-.footerizq {
+.footerizq {                                                      /* Formato tipografia margen izquierdo del footer */
   font-size: 10px;
   color: white;
   text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
   float: left;
 }
 
-.footerimg {
+.footerimg {                                                       /* Formato imagen central del footer */
   background-image: url(imagenes/gobiernoba.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -398,7 +398,7 @@ body {
 }
 
 
-.footerder {
+.footerder {                                                        /* Formato tipografia margen derecho del footer */
   font-size: 10px;
   color: white;
   text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
