@@ -674,8 +674,9 @@ body {
 
 
   
-                                                         /* config boton enlace */
-  .boton {
+                                                         
+  .boton { 
+    margin-left: 0px;                                              /* config boton enlace */
     color: #ffffff;
     border: 2px solid #ffffff;
     /*anchura, estilo y color borde*/
