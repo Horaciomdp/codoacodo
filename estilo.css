@@ -19,7 +19,7 @@ html, body {
 }
 .headImg {
     background-repeat: no-repeat;
-    background-image: url("./Img/0_Principal.png");
+    background-image: url("./imagenes/0_Principal.png");
     background-size: cover;
     background-position: bottom;
     height: 400px;
@@ -88,27 +88,27 @@ html, body {
 }
 
 .pyImg {
-    background-image: url(./Img/1_Py.png);
+    background-image: url(./imagenes/1_Py.png);
     background-size: cover;
 }
 
 .jsImg {
-    background-image: url("./Img/2_js.png");
+    background-image: url("./imagenes/2_js.png");
     background-size: cover;
 }
 
 .javaImg {
-    background-image: url("./Img/3_java.png");
+    background-image: url("./imagenes/3_java.png");
     background-size: cover;
 }
 
 .phpImg {
-    background-image: url("./Img/4_php.png");
+    background-image: url("./imagenes/4_php.png");
     background-size: cover;
 }
 
 .otrosImg {
-    background-image: url("./Img/5_Otros.jpg");
+    background-image: url("./imagenes/5_Otros.jpg");
     background-size: cover;
     background-position: 0 -250px;
 }
@@ -252,7 +252,7 @@ html, body {
 
 /* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
 
-@media (max-width: 768px){
+@media (min-width: 600px) and (max-width: 900px){
     * {
         /* border: 1px solid; */
     }
@@ -424,7 +424,7 @@ html, body {
 
 /* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
 
-@media (max-width: 425px){
+@media (max-width: 600px){
     * {
         /* border: 1px solid; */
     }
