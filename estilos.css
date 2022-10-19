@@ -19,7 +19,7 @@ html, body {
 }
 .headImg {
     background-repeat: no-repeat;
-    background-image: url("./Img/0_Principal.png");
+    background-image: url("./imagenes/0_Principal.png");
     background-size: cover;
     background-position: bottom;
     height: 400px;
@@ -88,30 +88,29 @@ html, body {
 }
 
 .pyImg {
-    background-image: url("./Img/1_Py.png");
+    background-image: url(./imagenes/1_Py.png);
     background-size: cover;
 }
 
 .jsImg {
-    background-image: url("./Img/2_js.png");
+    background-image: url("./imagenes/2_js.png");
     background-size: cover;
 }
 
 .javaImg {
-    background-image: url("./Img/3_java.png");
+    background-image: url("./imagenes/3_java.png");
     background-size: cover;
 }
 
 .phpImg {
-    background-image: url("./Img/4_php.png");
+    background-image: url("./imagenes/4_php.png");
     background-size: cover;
 }
 
 .otrosImg {
-    background-image: url("./Img/5_Otros.jpg");
+    background-image: url("./imagenes/5_Otros.jpg");
     background-size: cover;
     background-position: 0 -250px;
-    background-repeat: no-repeat;
 }
 
 .cursos {
@@ -198,8 +197,6 @@ html, body {
 }
 
 .cardCab {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
     padding: 20px;
     text-align: center;
 }
@@ -225,25 +222,10 @@ html, body {
     justify-content: space-between;
 }
 
-
-/* --------------------------------------------------FOOTER-------------------------------------------------- */
-
 .footer {
     background-color: rgb(39, 39, 39);
     border-top: 2px solid #f08100;
     height: 300px;
-}
-
-.footer h3 {
-    padding-top: 50px;    
-    padding-left: 20px;
-    color: white;
-
-}
-
-.footer hr{
-    margin: 0px 1%;
-    width: 98%;
 }
 
 .redes {
@@ -251,10 +233,8 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     width: 50%;
-    margin: 20px 20px;
+    margin-top: 30px;
 }
-
-
 
 .redes a {
     text-decoration: none;
@@ -266,18 +246,125 @@ html, body {
     color: yellow;
 }
 
-.contacto {
-    margin: 50px 100px;
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+
+
+
+/* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
+
+@media (min-width: 600px) and (max-width: 900px){
+    * {
+        /* border: 1px solid; */
+    }
+
+    .hdblack {
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+    }
+
+    .nav_cursos {
+        margin-top: 5px;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav_cursos a {
+        padding: 5px;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav_cursos a:hover {
+        background-color: black;
+    }
+
+    .logo {
+        padding-left: 0px;
+    }
+
+    .headTxt {
+        width: 80%;
+    
+    }
+
+    .descrip {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+/* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
+
+    .cursos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 60px;
+    }
+
+    .cursosTxt {
+        padding: 20px;
+    }
+
+    .cursosSubtl {
+        text-align: center;
+        padding: 0 0;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+
+    }
+
+    .cursosDescrip {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .curricula {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unidad {
+        grid-template-columns: 20% 80%;
+    }
+
+    .otrosImg {
+
+        background-position: 0 0;
+    }
+
+    .otros {
+    margin: 60px;
+    }
+
+    .otrosSubtl {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+
+    .otrosCards {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .cards {
+        margin: 15px 0  ;
+    }
+
+    .cardCab h3 {
+        font-size: 1.5rem;
+    }
+
+    .card_desc p {
+        font-size: 1.2rem;
+    }
+
 }
-
-
-
-
-
 
 
 /* --------------------------------------------------------------GENERAL-------------------------------------------------------------- */
@@ -337,7 +424,7 @@ html, body {
 
 /* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
 
-@media (max-width: 425px){
+@media (max-width: 600px){
     * {
         /* border: 1px solid; */
     }
@@ -407,7 +494,7 @@ html, body {
 
     .cursosDescrip {
         font-size: 1.5rem;
-
+        text-align: center;
     }
 
     .curricula {
@@ -453,150 +540,11 @@ html, body {
         font-size: 1.2rem;
     }
 
-    .footer{
-        height: 450px;
-    }
-
     .redes {
         flex-direction: column;
     }
 
     .redes a{
         margin: 10px 20px;
-    }
-
-    .contacto {
-        justify-content: center;
-
-    }
-
-    .contacto img {
-        padding: 0 20px;
-    }
-}
-
-/* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
-
-@media (max-width: 768px){
-    * {
-        /* border: 1px solid; */
-    }
-
-    .hdblack {
-        background-color: rgba(0, 0, 0, 0.5);
-        flex-direction: column;
-    }
-
-    .nav_cursos {
-        margin-top: 5px;
-        flex-direction: column;
-        width: 100%;
-
-    }
-
-    .nav_cursos a {
-        padding: 5px;
-        font-size: 1.5rem;
-        text-align: center;
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav_cursos a:hover {
-        background-color: black;
-    }
-
-    .logo {
-        padding-left: 0px;
-    }
-
-    .headTxt {
-        width: 80%;
-    
-    }
-
-    .descrip {
-        font-size: 1.5rem;
-        text-align: left;
-        padding: 20px;
-    }
-/* ----------------------------------------------------SECCIONES 768------------------------------------------------- */
-
-    .cursos {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 60px;
-    }
-
-    .cursosTxt {
-        padding: 20px;
-    }
-
-    .cursosSubtl {
-        text-align: center;
-        padding: 0 0;
-        margin-bottom: 20px;
-        font-size: 2.5rem;
-
-    }
-
-    .cursosDescrip {
-        font-size: 1.5rem;
-
-    }
-
-    .curricula {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .unidad {
-        grid-template-columns: 20% 80%;
-    }
-
-    .otrosImg {
-
-        background-position: 0 0;
-    }
-
-    .otros {
-    margin: 60px;
-    }
-
-    .otrosSubtl {
-        font-weight: bold;
-        font-size: 2.5rem;
-        margin: 20px 0;
-    }
-
-    .otrosCards {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        padding: 0;
-    }
-
-    .cards {
-        margin: 15px 0  ;
-    }
-
-    .cardCab h3 {
-        font-size: 1.5rem;
-    }
-
-    .card_desc p {
-        font-size: 1.2rem;
-    }
-
-    /* ----------------------------------------------FOOTER 768---------------------------------------- */
-
-    .redes {
-        width: 100%;
-        margin: 20px auto;
-    }
-
-    .contacto {
-        width: 50%;
-        margin: 40px auto;
     }
 }
