@@ -405,6 +405,122 @@ body {
   float: right;
 }
 
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////  ESTILOS EDGARDO ////////////////////////////////////////////////////////////////////////*/
+/*ESTILOS RAMA2EDGARDO*/
+.grid-container2 {
+  /* datos del grid tamaño pequeño */
+  background-image: url(imagenes/fondobasic.jpg );
+  /* datos de imagen de fondo */
+  background-repeat: no-repeat;
+  /* se repite la imagen? */
+  background-size: 100% 250%;
+  /* tamaño de la imagen */
+  display: grid;
+  gap: 5px;
+  grid-template:
+    /* distribucion del grid en tramaño pequeño */
+    "header" 110px
+    "navbar" 100px
+    "main" 630px
+    "sidebar2" 220px
+    "footer" 150px;
+}
+
+.grid-container2>* {
+  /* formato general de todos los elementos interno al grid */
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.headerCtro h2 {
+  font-size: 30px;
+}
+
+.headerCtro h4 {
+  font-size: 20px;
+}
+
+.main h3 {
+  margin: 5px;
+  color: #ffffff;
+}
+
+.main p {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.main img {
+  width: 50%;
+  margin: 5px;
+}
+
+.main01 {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  /* saca esto despues es una guia de donde estas parado */
+  margin: 10px;
+}
+
+
+.main02 {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid #e5be01;
+  /* saca esto despues es una guia de donde estas parado */
+  margin: 10px;
+  margin-top: 40px;
+}
+
+
+.main03 {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid green;
+  /* saca esto despues es una guia de donde estas parado */
+  margin: 10px;
+  margin-top: 40px;
+}
+
+.main03 img {
+  width: 40%;
+  margin: 5px;
+}
+
+.sidebar2 {
+  font-size: 15px;
+  color: #ffffff;
+  border: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.sidebar2 p {
+  margin-top: 30px;
+  ;
+}
+
+
+
+
 
 /*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS MEDIANAS (-600PX < X < 900PX ) ///////////////////////////*/
 @media (min-width: 600px) {                                   /* Formato del grid y distribucion para pantallas medianas */
@@ -546,6 +662,32 @@ body {
     text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
     float: right;
   }
+/*ESTILOS RAMA2EDGARDO*/
+/*////////////////////////////////////// AGREGADO EDGARDO //////////////////////////////////////////////////////////////////*/
+.grid-container2 {
+  grid-template:
+    "header  header" 150px
+    "navbar  navbar" 100px
+    "sidebar2 main" 850px
+    "footer  footer" 150px /
+    auto auto;
+}
+
+.sidebar2 {                                                         /* Cambio de fondo para pantallas medianas */
+  background-image: url(imagenes/barranav.jpg);
+}
+
+.sidebar2 div {                                                     /* Cambio de propiedades para pantallas medianas */
+  display: inline-table;
+  border: 1px solid red;
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  margin: 18px 10px;
+
+}
+
+/*/////////////////////////////////////////// FIN AGREGADO EDGARDO//////////////////////////////////////////////////////////////*/
 
 }
 
@@ -791,363 +933,8 @@ body {
   }
 
 
-
-
-}
-
-
-/*////////////////////////// FIN DE DISEÑO GENERAL DEL CONTENEDOR /////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/* ESTILOS RAMA2EDGARDO */
-
-/*///////////////////////////// DISEÑO GENERAL DEL CONTENEDOR ///////////////////////////////////////////////*/
-/*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS PEQUEÑAS ( X<600PX ) ////////////////////////////////////*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  height: 100%;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;            /* fonts y configuraciones generales*/
-  font-size: 1.2rem;
-  min-height: 100%;
-  text-shadow: black 0.1em 0.1em 0.2em
-}
-
-.grid-container2 {                                        /* datos del grid tamaño pequeño */
-  background-image: url(imagenes/fondobasic.jpg );       /* datos de imagen de fondo */
-  background-repeat: no-repeat;                          /* se repite la imagen? */
-  background-size: 100% 250%;                            /* tamaño de la imagen */
-  display: grid;
-  gap: 5px;
-  grid-template:                                         /* distribucion del grid en tramaño pequeño */
-    "header" 110px
-    "navbar" 100px
-    "main" 630px
-    "sidebar2" 220px
-    "footer" 150px;
-}
-.grid-container2>* {                                       /* formato general de todos los elementos interno al grid */
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-  padding: 5px;
-  text-align: center;
-}
-
-
-.header {                                                 /* formato de fondo de imagen del header */ 
-  grid-area: header;
-  background-image: url(imagenes/vectorialblanco.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  text-align: center;
-}
-.header div {                                             /* formato de los divisores internos al header */ 
-  display: inline-table;
-  border: 1px solid white;                              /* estilo de borde */
-  border-radius: 5px;                                     /* radio del borde */
-  padding: 15px;                                          
-  height: 50px;                                 
-  width: 60px;
-  margin: 10px 5px;
-}
-.headerIzq {                                              /* configuracion de formato logo buenos aires ciudad */
-  background-image: url(imagenes/baciudad.jpg);
-  background-size: 100% 100%;
-  background-position: center;
-  float: left;
-}
-.header .headerCtro {                                     /* borde amarillo del divisor central del header */
-  border: 1px solid #e5be01;
-}
-.headerCtro p {                                           /* tipo de texto del parrafo "header central" */
-  width: 150px;
-  font-size: 9px;
-}
-.headerCtro h2{
-  font-size: 30px;
-}
-.headerCtro h4{
-  font-size: 20px;
-}
-
-.headerDer {                                                /* configuracion de formato logo agencia de aprendizaje */
-  background-image: url(imagenes/agencia.jpg );
-  background-size: 100% 100%;
-  background-position: center;
-  float: right;
-}
-
-
-.navbar {                                                   /* configuracion de barra navegacion -fondo- */
-  grid-area: navbar;
-  background-image: url(imagenes/barranav2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.boton {                                                 /* configuracion de botones  barra navegacion -DESCRIPCION RENGLON A RENGLON */
-  margin-left: 20px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  /*anchura, estilo y color borde*/
-  padding: 5px;
-  /*espacio alrededor texto*/
-  background-image: url(imagenes/button2.jpg);
-  /*color botón*/
-  background-repeat: no-repeat;
-  /* no repite imagen */
-  background-position: center;
-  /* cubre el area */
-  text-decoration: rgb(255, 255, 255);
-  /*decoración texto*/
-  text-transform: uppercase;
-  /*capitalización texto*/
-  font-family: 'roboto', sans-serif;
-  /*tipografía texto*/
-  font-size: 10px;
-  border-radius: 25px;
-  /*bordes redondos*/
-}
-#b1 {
-
-  margin: auto;
-  /*separacion de botones */
-}
-
-
-
-
-
-
-.main  { 
-                                                 /* division princilpal del cuerpo */
-  height: 200px;
-  margin: 3px;
-  grid-area: main; /* agregué esto y no funcina */
-}
-
-.main h3 {
-  margin: 5px;
-  color: #ffffff;
-}
-
-.main p { 
- font-size: 18px;
- color: #ffffff;
- margin: 5px;
-}
-
-.main img {
- width: 50%;
- margin: 5px;
-} 
-
-.main01 {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  border: 2px solid white;                 /* saca esto despues es una guia de donde estas parado */
-  margin: 10px;
-}
-
-
-.main02 {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  border: 2px solid #e5be01;             /* saca esto despues es una guia de donde estas parado */
-  margin: 10px;
-  margin-top: 40px;
-}
-
-
-.main03 {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  border: 2px solid green;                /* saca esto despues es una guia de donde estas parado */
-  margin: 10px;
-  margin-top: 40px;
-}
-
-.main03 img{
-  width: 40%;
-  margin: 5px;
- } 
-
-.sidebar2 {
-  font-size: 15px;
-  color: #ffffff;
-  border: 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.sidebar2 p {
-  margin-top: 30px;;
-}
-
-
-.footer {                                                       /* Footer configuracion del espacio general */
-  grid-area: footer;
-  background-image: url(imagenes/footerba.jpg );
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: auto; /* agregué esto pero no funciona */
-}
-
-.footer div {                                                   /* Footer configuracion de las divisiones internas para las imagenes */
-  display: inline-table;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 5px;
-  height: 100;
-  width: 100px;
-  margin: 2px 2px;
-
-}
-
-.footerizq h4 {                                                   /* Formato tipografia titulo del footer */
-  font-size: 14px;
-}
-
-.footerizq {                                                      /* Formato tipografia margen izquierdo del footer */
-  font-size: 10px;
-  color: white;
-  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-  float: left;
-}
-
-.footerimg {                                                       /* Formato imagen central del footer */
-  background-image: url(imagenes/gobiernoba.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 120px;
-  width: 150px;
-}
-
-
-.footerder {                                                        /* Formato tipografia margen derecho del footer */
-  font-size: 10px;
-  color: white;
-  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-  float: right;
-}
-
-
-/*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS MEDIANAS (-600PX < X < 900PX ) ///////////////////////////*/
-@media (min-width: 600px) {                                   /* Formato del grid y distribucion para pantallas medianas */
-  .grid-container2 {
-    grid-template:
-      "header  header" 150px
-      "navbar  navbar" 100px
-      "sidebar2 main" 850px
-      "footer  footer" 150px /
-      auto auto;
-  }
-
-  .header div {                                               /* Redimensionado de propiedades del header para pantallas medianas */   
-    padding: 10px;
-    height: 100px;
-    width: 160px;
-    margin: 20px 5px;
-  }
-
-
-
-  .header .headerCtro {                                        /* Redimensionado de propiedades del header para pantallas medianas -REFIERE A TEXTO CON SPAN SIN ESTO SE CORRE EL EFECTO DEL SPAN ENTRE OTRAS COSAS- */
-
-    border: 1px solid #e5be01;
-    height: auto;
-  }
-
-  .headerCtro p {                                                /* Redimensionado de propiedades de tipografias para pantallas medianas */
-    margin-top: 10px;
-    width: 190px;
-    font-size: 10px;
-  }
-
-  
-
-  .boton {                                                       /* Redimensionado de propiedades de los botones para pantallas medianas */
-    font-size: 15px;
-  }
-
-  
-
-  .sidebar2 {                                                         /* Cambio de fondo para pantallas medianas */
-    background-image: url(imagenes/barranav.jpg);
-  }
-
-  .sidebar div {                                                     /* Cambio de propiedades para pantallas medianas */
-    display: inline-table;
-    border: 1px solid red;
-    padding: 15px;
-    height: 60px;
-    width: 60px;
-    margin: 18px 10px;
-
-  }
-
-  .footer div {                                                       /* Cambio de propiedades de DIV FOOTER para pantallas medianas */
-    display: inline-table;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px;
-    height: 130;
-    width: 150px;
-    margin: 2px 5px;
-
-  }
-
-  .footerizq {                                                          
-    font-size: 14px;
-    color: white;
-    text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-    float: left;
-  }
-
-  .footerimg {
-
-    height: 130px;
-    width: 150px;
-  }
-
-  .footerder {
-    font-size: 14px;
-    color: white;
-    text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-    float: right;
-  }
-
-}
-
-
-/*//////////////// DISEÑO RESPONSIVE PARA PANTALLAS GRANDES ( X>900PX ) /////////////////////////////////////*/
-@media (min-width: 900px) {
-
+/*//////////////////////////////// AGREGADO EDGARDO ////////////////////////////////////////////////////////////////////////////*/
+/*ESTILOS RAMA2EDGARDO*/
   .grid-container2 {                                   /* Diseño y logica de distribucion de las cajas en pantallas grandes */
     grid-template:
       "header  header header" 200px
@@ -1155,142 +942,12 @@ body {
       "footer  footer footer" 150px /
       130px auto 200px;
   }
-
-  .header div {                                        /* Configuracion divisiones header pantallas grandes */
-    padding: 10px;
-    height: 120px;
-    width: 180px;
-    margin: 20px 20px;
-  }
-
-  .header .headerCtro {
-
-    border: 1px solid #e5be01;
-    height: auto;
-  }
-
-  .headerCtro p {
-    margin-top: 30px;
-    width: 300px;
-    font-size: 18px;
-  }
-
- 
-
-
-
-  .navbar {                                             /* Reorganizacion de la barra navegacion para pantallas grandes */
-    grid-area: navbar;
-
-    display: block;
-    flex-direction: column;
-    position: relative;
-    right: 100%;
-
-    background-image: url(imagenes/barranav2.jpg);
-    background-repeat: no-repeat;
-    /* no repite imagen */
-    background-size: cover;
-    /* cubre el area */
-    border-radius: 0.5em;
-    /* esquina redondeada sutil para restar agresividad */
-    opacity: 60%;
-
-
-    transform: translateX(0.5em);                       /* Transformacion de deslizamiento de la barra -SOLO EN PANTALLAS GRANDES UTILIZADO EL CRITERIO QUE LAS DEMAS PANTALLAS SON TACTILES Y RARA VEZ SE LES CONECTA UN MOUSE LO QUE DIFICULTARIA SU APERTURA EN PANTALLAS PEQUEÑAS- */ 
-    transition: 1s transform;
-
-
-  }
-
-  .navbar:hover,
-  nav:focus-within {                                    /* propiedades de transformacion de la barra */
-    transform: translateX(100%);
-    opacity: 60%;
-  }
-
-
-  
-                                                         
-  .boton { 
-    margin-left: 0px;                                              /* config boton enlace */
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    /*anchura, estilo y color borde*/
-    padding: 5px;
-    /*espacio alrededor texto*/
-    background-image: url(imagenes/button2.jpg);
-    /*color botón*/
-    background-repeat: no-repeat;
-    /* no repite imagen */
-    background-position: center;
-    /* cubre el area */
-    text-decoration: rgb(255, 255, 255);
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'roboto', sans-serif;
-    /*tipografía texto*/
-    font-size: 14px;
-    border-radius: 25px;
-    /*bordes redondos*/
-  }
-
-  #b1 {
-    margin-top: 30px;
-    /*separacion de botones */
-  }
-
-  
-  
-
-  .sidebar div {                                              /* Adecuacion de tamaño del sidebar de pantallas grandes */
-    display: inline-table;
-    border: 1px solid red;
-    padding: 15px;
-    height: 80px;
-    width: 80px;
-    margin: 18px 10px;
-
-  }
-
-
-
-
-  .footer div {                                               /* Configuracion del footer -TAMAÑO DE DIVS Y DATOS DE FUENTES PARA ADECUAR LECTURA- */
-    display: inline-table;
-    border: 1px solid red;
-
-  }
-
-  .footerizq {
-    font-size: 14px;
-    color: white;
-    text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-    float: left;
-  }
-
-
-
-  .footerder {
-    font-size: 14px;
-    color: white;
-    text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
-    float: right;
-  }
-
-
-
+/*//////////////////////////////// FIN AGREGADO EDGARDO /////////////////////////////////////////////////////////////////////////*/
 
 }
 
 
 /*////////////////////////// FIN DE DISEÑO GENERAL DEL CONTENEDOR /////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
-
-
-
 
 
