@@ -497,8 +497,10 @@ body {
 }
 
 .main03 img {
+  align-items: center ;
+  height: 80%;
   width: 40%;
-  margin: 5px;
+  margin-top: -55px;
 }
 
 .sidebar2 {
