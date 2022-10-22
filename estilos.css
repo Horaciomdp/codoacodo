@@ -934,7 +934,7 @@ body {
 
 
 /*//////////////////////////////// AGREGADO EDGARDO ////////////////////////////////////////////////////////////////////////////*/
-/*ESTILOS RAMA2EDGARDO*/
+
   .grid-container2 {                                   /* Diseño y logica de distribucion de las cajas en pantallas grandes */
     grid-template:
       "header  header header" 200px
