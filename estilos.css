@@ -222,10 +222,25 @@ html, body {
     justify-content: space-between;
 }
 
+
+/* --------------------------------------------------FOOTER-------------------------------------------------- */
+
 .footer {
     background-color: rgb(39, 39, 39);
     border-top: 2px solid #f08100;
     height: 300px;
+}
+
+.footer h3 {
+    padding-top: 50px;    
+    padding-left: 20px;
+    color: white;
+
+}
+
+.footer hr{
+    margin: 0px 1%;
+    width: 98%;
 }
 
 .redes {
@@ -233,8 +248,10 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     width: 50%;
-    margin-top: 30px;
+    margin: 20px 20px;
 }
+
+
 
 .redes a {
     text-decoration: none;
@@ -246,7 +263,13 @@ html, body {
     color: yellow;
 }
 
-
+.contacto {
+    margin: 50px 100px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
@@ -362,6 +385,16 @@ html, body {
 
     .card_desc p {
         font-size: 1.2rem;
+    }
+
+    .redes {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .contacto {
+        width: 50%;
+        margin: 40px auto;
     }
 
 }
@@ -540,11 +573,26 @@ html, body {
         font-size: 1.2rem;
     }
 
+    .footer{
+        height: 450px;
+    }
+
     .redes {
         flex-direction: column;
     }
 
     .redes a{
         margin: 10px 20px;
+    }
+
+    .contacto {
+        justify-content: center;
+
+    }
+
+    .contacto img {
+        padding: 0 20px;
+        width: 80%;
+        height: 80%;
     }
 }
