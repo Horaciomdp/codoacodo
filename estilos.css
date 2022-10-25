@@ -491,7 +491,7 @@ body {
   margin: 10px;
   margin-top:10px;
 }
-.main02 .main02pri h3 {font-size: 18px;}
+.main02  h3 {font-size: 18px;}
 .main02 .main02pri p {font-size: 12px;}
 .main02 .main02seg {margin-top: -150px;}
 
@@ -685,13 +685,18 @@ body {
   grid-template:
     "header  header" 150px
     "navbar  navbar" 100px
-    "sidebar2 main" 850px
+    "sidebar2 main" 860px
     "footer  footer" 150px /
     auto auto;
 }
 
+.headerCtro2 h2{font-size: 25px;}
+.headerCtro2 h4{font-size: 18px;}
+.main02  h3 {font-size: 16px;}
+.main02 .main02seg {margin-top: -140px;}
 .sidebar2 {                                                         /* Cambio de fondo para pantallas medianas */
   background-image: url(imagenes/barranav.jpg);
+  background-size: cover;
 }
 
 .sidebar2 div {                                                     /* Cambio de propiedades para pantallas medianas */
@@ -954,10 +959,14 @@ body {
   .grid-container2 {                                   /* Diseño y logica de distribucion de las cajas en pantallas grandes */
     grid-template:
       "header  header header" 200px
-      "navbar  main   sidebar2" 850px
+      "navbar  main   sidebar2" 860px
       "footer  footer footer" 150px /
       130px auto 200px;
   }
+
+
+  .main02  h3 {font-size: 20px;}
+.main02 .main02pri p {font-size: 16px;}
 /*//////////////////////////////// FIN AGREGADO EDGARDO /////////////////////////////////////////////////////////////////////////*/
 
 }
