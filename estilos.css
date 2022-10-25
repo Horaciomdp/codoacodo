@@ -276,9 +276,7 @@ html, body {
 /* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
 
 @media (min-width: 600px) and (max-width: 900px){
-    * {
-        /* border: 1px solid; */
-    }
+
 
     .hdblack {
         background-color: rgba(0, 0, 0, 0.5);
@@ -458,9 +456,7 @@ html, body {
 /* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
 
 @media (max-width: 600px){
-    * {
-        /* border: 1px solid; */
-    }
+
 
     .hdblack {
         background-color: rgba(0, 0, 0, 0.5);
