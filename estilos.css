@@ -460,7 +460,7 @@ body {
 }
 
 .main01 {
-  background-image: url();
+  background-image: url(imagenes/codo-a-codo-inscripcion.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -485,10 +485,11 @@ body {
 
 
 .main03 {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(imagenes/inscrip.jpg);
+  background-position:center ;
+  background-repeat:no-repeat ;
   background-size: cover;
+  
   border-radius: 10px;
   border: 2px solid green;
   /* saca esto despues es una guia de donde estas parado */
@@ -502,6 +503,15 @@ body {
   width: 40%;
   margin-top: -55px;
 }
+
+#main03a {
+  float: left;
+  
+  width: 60%;
+}
+#main03b {
+  float: right; 
+  }
 
 .sidebar2 {
   font-size: 15px;
@@ -681,7 +691,6 @@ body {
 
 .sidebar2 div {                                                     /* Cambio de propiedades para pantallas medianas */
   display: inline-table;
-  border: 1px solid red;
   padding: 15px;
   height: 60px;
   width: 60px;
