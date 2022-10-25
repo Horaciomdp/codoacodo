@@ -68,10 +68,13 @@ body {
 
 .header .headerCtro {                                     /* borde amarillo del divisor central del header */
   border: 1px solid #e5be01;
+}
+
+.header .headerCtro2 {                                     /* borde amarillo del divisor central del header */
+  border: 1px solid #e5be01;
 
 
 }
-
 .headerCtro p {                                           /* tipo de texto del parrafo "header central" */
   width: 150px;
   font-size: 9px;
@@ -384,7 +387,7 @@ body {
 .footerizq {                                                      /* Formato tipografia margen izquierdo del footer */
   font-size: 10px;
   color: white;
-  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
+  
   float: left;
 }
 
@@ -422,7 +425,7 @@ body {
     /* distribucion del grid en tramaño pequeño */
     "header" 110px
     "navbar" 100px
-    "main" 630px
+    "main" 750px
     "sidebar2" 220px
     "footer" 150px;
 }
@@ -443,6 +446,9 @@ body {
   font-size: 20px;
 }
 
+.headerCtro2 h2{font-size: 20px;}
+.headerCtro2 h4{font-size: 10px;}
+
 .main h3 {
   margin: 5px;
   color: #ffffff;
@@ -460,6 +466,7 @@ body {
 }
 
 .main01 {
+  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
   background-image: url(imagenes/codo-a-codo-inscripcion.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -472,6 +479,8 @@ body {
 
 
 .main02 {
+  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
+  min-height: 300px;
   background-image: url();
   background-position: center;
   background-repeat: no-repeat;
@@ -480,11 +489,14 @@ body {
   border: 2px solid #e5be01;
   /* saca esto despues es una guia de donde estas parado */
   margin: 10px;
-  margin-top: 40px;
+  margin-top:10px;
 }
-
+.main02 .main02pri h3 {font-size: 18px;}
+.main02 .main02pri p {font-size: 12px;}
+.main02 .main02seg {margin-top: -150px;}
 
 .main03 {
+  text-shadow: 2px 2px 1px black, 1px 2px 2px purple;
   background-image: url(imagenes/inscrip.jpg);
   background-position:center ;
   background-repeat:no-repeat ;
@@ -504,14 +516,7 @@ body {
   margin-top: -55px;
 }
 
-#main03a {
-  float: left;
-  
-  width: 60%;
-}
-#main03b {
-  float: right; 
-  }
+
 
 .sidebar2 {
   font-size: 15px;
