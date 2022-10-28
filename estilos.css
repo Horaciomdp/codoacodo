@@ -539,7 +539,12 @@ body {
 /*/////////////////////////////////////////////////// COMIENZO PAGINA GASTON ////////////////////////////////////////////////*/
 
 /* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
-  .hdblack {
+.header3 {
+  display: flex;
+  flex-direction: column;
+}  
+
+.hdblack {
       background-color: rgba(0, 0, 0, 0.5);
       flex-direction: column;
   }
@@ -553,7 +558,7 @@ body {
 
   .nav_cursos a {
       padding: 5px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: center;
       width: 100%;
       margin: 0;
@@ -568,20 +573,21 @@ body {
   }
 
   .headTxt {
-      width: 80%;
-  
-  }
+      width: 100%;
+       }
+
+  .tit_descrip{text-align: center;}
 
   .descrip {
-      font-size: 1.5rem;
-      text-align: center;
+      font-size: 1.2rem;
+      text-align: justify;
       padding: 10px 0;
   }
 
 /* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
 
   .imgn {
-      height: 250px;
+      height: 50px;
   }
 
   .cursos {
@@ -603,14 +609,14 @@ body {
   }
 
   .cursosDescrip {
-      font-size: 1.5rem;
-      text-align: center;
+      font-size: 1 rem;
+      text-align:justify ;
   }
 
   .curricula {
       display: flex;
       flex-direction: column;
-  }
+      }
 
   .unidad {
       grid-template-columns: 20% 80%;
@@ -650,6 +656,17 @@ body {
       font-size: 1.2rem;
   }
 
+  .unidad {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  
+  .unidadLogo {
+    width: 80%;
+    margin: 8px;
+  }
+  
+
   .footer3{
       height: 450px;
   }
@@ -672,6 +689,58 @@ body {
       width: 80%;
       height: 80%;
   }
+
+  .bord_blue{ 
+
+    border: 1px solid #219ecf;
+    }
+    
+    .bord_green {
+    border: 1px solid#00a79f;
+    }
+    
+    .bord_red {
+    border: 1px solid#ef7a70;
+    }
+    
+    .bord_yellow {
+    border: 1px solid #f08100;
+    }
+    
+    
+    .blue{ 
+    
+    color: #219ecf;
+    }
+    
+    .green {
+    color:#00a79f;
+    }
+    
+    .red {
+    color:#ef7a70;
+    }
+    
+    .yellow {
+    color: #f08100;
+    }
+    
+    .bgblue{ 
+    
+    background-color: #00a79f;
+    }
+    
+    .bggreen {
+    background-color:#00a79f;
+    }
+    
+    .bgred {
+    background-color:#ef7a70;
+    }
+    
+    .bgyellow {
+    background-color: #f08100;
+    }
 
 
 /* /////////////////////////////////////////////////// FIN DISEÑO GASTON ///////////////////////////////////////////////////*/
@@ -862,6 +931,14 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
 }
+.tit_descrip{text-align: center;}
+
+  .descrip {
+      font-size: 1.rem;
+      text-align: justify;
+      padding: 10px 0;
+  }
+
 
 .nav_cursos {
   margin-top: 5px;
@@ -930,6 +1007,12 @@ body {
 .unidad {
   grid-template-columns: 20% 80%;
 }
+
+.unidadLogo {
+  width: 20%;
+  margin: 8px;
+}
+
 
 .otrosImg {
 
@@ -1030,6 +1113,12 @@ background-color:#ef7a70;
 
 .bgyellow {
 background-color: #f08100;
+}
+
+.footer3 {
+  background-image: url(imagenes/);
+  border-top: 2px solid #f08100;
+  height: 100px;
 }
 
 /*////////////////////////////////// FIN AGREGADO GASTON ///////////////////////////////////////////////////////////////////*/
