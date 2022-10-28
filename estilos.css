@@ -535,6 +535,151 @@ body {
   ;
 }
 
+/*//////////////////////////////////////////////////// FIN EDGARDO ///////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////// COMIENZO PAGINA GASTON ////////////////////////////////////////////////*/
+
+/* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
+  .hdblack {
+      background-color: rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+  }
+
+  .nav_cursos {
+      margin-top: 5px;
+      flex-direction: column;
+      width: 100%;
+
+  }
+
+  .nav_cursos a {
+      padding: 5px;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+  }
+
+  .nav_cursos a:hover {
+      background-color: black;
+  }
+
+  .logo {
+      padding-left: 0px;
+  }
+
+  .headTxt {
+      width: 80%;
+  
+  }
+
+  .descrip {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+/* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
+
+  .imgn {
+      height: 250px;
+  }
+
+  .cursos {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 20px;
+  }
+
+  .cursosTxt {
+      padding: 20px;
+  }
+
+  .cursosSubtl {
+      text-align: center;
+      padding: 0 0;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+
+  }
+
+  .cursosDescrip {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  .curricula {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .unidad {
+      grid-template-columns: 20% 80%;
+  }
+
+  .otrosImg {
+
+      background-position: 0 0;
+  }
+
+  .otros {
+  margin: 20px;
+  }
+
+  .otrosSubtl {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin: 20px 0;
+  }
+
+  .otrosCards {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 0;
+  }
+
+  .cards {
+      margin: 15px 0  ;
+  }
+
+  .cardCab h3 {
+      font-size: 1.5rem;
+  }
+
+  .card_desc p {
+      font-size: 1.2rem;
+  }
+
+  .footer3{
+      height: 450px;
+  }
+
+  .redes {
+      flex-direction: column;
+  }
+
+  .redes a{
+      margin: 10px 20px;
+  }
+
+  .contacto {
+      justify-content: center;
+
+  }
+
+  .contacto img {
+      padding: 0 20px;
+      width: 80%;
+      height: 80%;
+  }
+
+
+/* /////////////////////////////////////////////////// FIN DISEÑO GASTON ///////////////////////////////////////////////////*/
+
+
+
+
+
 
 
 
@@ -709,7 +854,185 @@ body {
 }
 
 /*/////////////////////////////////////////// FIN AGREGADO EDGARDO//////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////AGREGADO DE GASTON ////////////////////////////////////////////////////////////////*/
 
+/* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
+
+.hdblack {
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+}
+
+.nav_cursos {
+  margin-top: 5px;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.nav_cursos a {
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.nav_cursos a:hover {
+  background-color: black;
+}
+
+.logo {
+  padding-left: 0px;
+}
+
+.headTxt {
+  width: 80%;
+
+}
+
+.descrip {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 20px;
+}
+
+/* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
+
+.cursos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px;
+}
+
+.cursosTxt {
+  padding: 20px;
+}
+
+.cursosSubtl {
+  text-align: center;
+  padding: 0 0;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+
+}
+
+.cursosDescrip {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.curricula {
+  display: flex;
+  flex-direction: column;
+}
+
+.unidad {
+  grid-template-columns: 20% 80%;
+}
+
+.otrosImg {
+
+  background-position: 0 0;
+}
+
+.otros {
+margin: 60px;
+}
+
+.otrosSubtl {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.otrosCards {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0;
+}
+
+.cards {
+  margin: 15px 0  ;
+}
+
+.cardCab h3 {
+  font-size: 1.5rem;
+}
+
+.card_desc p {
+  font-size: 1.2rem;
+}
+
+.redes {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.contacto {
+  width: 50%;
+  margin: 40px auto;
+}
+
+
+
+
+/* --------------------------------------------------------------GENERAL-------------------------------------------------------------- */
+
+.bord_blue{ 
+
+border: 1px solid #219ecf;
+}
+
+.bord_green {
+border: 1px solid#00a79f;
+}
+
+.bord_red {
+border: 1px solid#ef7a70;
+}
+
+.bord_yellow {
+border: 1px solid #f08100;
+}
+
+
+.blue{ 
+
+color: #219ecf;
+}
+
+.green {
+color:#00a79f;
+}
+
+.red {
+color:#ef7a70;
+}
+
+.yellow {
+color: #f08100;
+}
+
+.bgblue{ 
+
+background-color: #00a79f;
+}
+
+.bggreen {
+background-color:#00a79f;
+}
+
+.bgred {
+background-color:#ef7a70;
+}
+
+.bgyellow {
+background-color: #f08100;
+}
+
+/*////////////////////////////////// FIN AGREGADO GASTON ///////////////////////////////////////////////////////////////////*/
 }
 
 
@@ -969,15 +1292,8 @@ body {
 .main02 .main02pri p {font-size: 16px;}
 /*//////////////////////////////// FIN AGREGADO EDGARDO /////////////////////////////////////////////////////////////////////////*/
 
-}
 
 
-/*////////////////////////// FIN DE DISEÑO GENERAL DEL CONTENEDOR /////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
-/*///////////////////////////////////////  AGREGADO GASTON //////////////////////////////////////////////////////////////////*/
-/*************************************** A EDITAR   /********************************************************************** */
 /* HECHO POR GASTON EN SU RAMA , AL AGREGARLO AL MERGE LO BORRE SIN QUERER //////////////////////////////*/ 
 
 
@@ -1256,322 +1572,7 @@ html, body {
 
 
 
-/* ---------------------------------------------- RESPONSIVE 768PX --------------------------------------- */
-
-@media (min-width: 600px) and (max-width: 900px){
-
-
-  .hdblack {
-      background-color: rgba(0, 0, 0, 0.5);
-      flex-direction: column;
-  }
-
-  .nav_cursos {
-      margin-top: 5px;
-      flex-direction: column;
-      width: 100%;
-
-  }
-
-  .nav_cursos a {
-      padding: 5px;
-      font-size: 1.5rem;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-  }
-
-  .nav_cursos a:hover {
-      background-color: black;
-  }
-
-  .logo {
-      padding-left: 0px;
-  }
-
-  .headTxt {
-      width: 80%;
-  
-  }
-
-  .descrip {
-      font-size: 1.5rem;
-      text-align: left;
-      padding: 20px;
-  }
-
-/* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
-
-  .cursos {
-      display: flex;
-      flex-direction: column;
-      margin: 10px 60px;
-  }
-
-  .cursosTxt {
-      padding: 20px;
-  }
-
-  .cursosSubtl {
-      text-align: center;
-      padding: 0 0;
-      margin-bottom: 20px;
-      font-size: 2.5rem;
-
-  }
-
-  .cursosDescrip {
-      font-size: 1.5rem;
-      text-align: center;
-  }
-
-  .curricula {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .unidad {
-      grid-template-columns: 20% 80%;
-  }
-
-  .otrosImg {
-
-      background-position: 0 0;
-  }
-
-  .otros {
-  margin: 60px;
-  }
-
-  .otrosSubtl {
-      font-weight: bold;
-      font-size: 2.5rem;
-      margin: 20px 0;
-  }
-
-  .otrosCards {
-      display: flex;
-      flex-direction: column;
-      margin: 20px;
-      padding: 0;
-  }
-
-  .cards {
-      margin: 15px 0  ;
-  }
-
-  .cardCab h3 {
-      font-size: 1.5rem;
-  }
-
-  .card_desc p {
-      font-size: 1.2rem;
-  }
-
-  .redes {
-      width: 100%;
-      margin: 20px auto;
-  }
-
-  .contacto {
-      width: 50%;
-      margin: 40px auto;
-  }
-
+/*///////////////////////////////// FIN AGREGADO GASTON /////////////////////////////////////////////////////////////////////*/
 }
-
-
-/* --------------------------------------------------------------GENERAL-------------------------------------------------------------- */
-
-.bord_blue{ 
-
-  border: 1px solid #219ecf;
-}
-
-.bord_green {
-  border: 1px solid#00a79f;
-}
-
-.bord_red {
-  border: 1px solid#ef7a70;
-}
-
-.bord_yellow {
-  border: 1px solid #f08100;
-}
-
-
-.blue{ 
-
-  color: #219ecf;
-}
-
-.green {
-  color:#00a79f;
-}
-
-.red {
-  color:#ef7a70;
-}
-
-.yellow {
-  color: #f08100;
-}
-
-.bgblue{ 
-
-  background-color: #00a79f;
-}
-
-.bggreen {
-  background-color:#00a79f;
-}
-
-.bgred {
-  background-color:#ef7a70;
-}
-
-.bgyellow {
-  background-color: #f08100;
-}
-
-
-/* ---------------------------------------------- RESPONSIVE 425PX --------------------------------------- */
-
-@media (max-width: 600px){
-
-
-  .hdblack {
-      background-color: rgba(0, 0, 0, 0.5);
-      flex-direction: column;
-  }
-
-  .nav_cursos {
-      margin-top: 5px;
-      flex-direction: column;
-      width: 100%;
-
-  }
-
-  .nav_cursos a {
-      padding: 5px;
-      font-size: 1.5rem;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-  }
-
-  .nav_cursos a:hover {
-      background-color: black;
-  }
-
-  .logo {
-      padding-left: 0px;
-  }
-
-  .headTxt {
-      width: 80%;
-  
-  }
-
-  .descrip {
-      font-size: 1.5rem;
-      text-align: center;
-      padding: 10px 0;
-  }
-
-/* -----------------------------------------------------------SECCIONES----------------------------------------------------------- */
-
-  .imgn {
-      height: 250px;
-  }
-
-  .cursos {
-      display: flex;
-      flex-direction: column;
-      margin: 10px 20px;
-  }
-
-  .cursosTxt {
-      padding: 20px;
-  }
-
-  .cursosSubtl {
-      text-align: center;
-      padding: 0 0;
-      margin-bottom: 20px;
-      font-size: 2.5rem;
-
-  }
-
-  .cursosDescrip {
-      font-size: 1.5rem;
-      text-align: center;
-  }
-
-  .curricula {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .unidad {
-      grid-template-columns: 20% 80%;
-  }
-
-  .otrosImg {
-
-      background-position: 0 0;
-  }
-
-  .otros {
-  margin: 20px;
-  }
-
-  .otrosSubtl {
-      font-weight: bold;
-      font-size: 2.5rem;
-      margin: 20px 0;
-  }
-
-  .otrosCards {
-      display: flex;
-      flex-direction: column;
-      margin: 20px;
-      padding: 0;
-  }
-
-  .cards {
-      margin: 15px 0  ;
-  }
-
-  .cardCab h3 {
-      font-size: 1.5rem;
-  }
-
-  .card_desc p {
-      font-size: 1.2rem;
-  }
-
-  .footer{
-      height: 450px;
-  }
-
-  .redes {
-      flex-direction: column;
-  }
-
-  .redes a{
-      margin: 10px 20px;
-  }
-
-  .contacto {
-      justify-content: center;
-
-  }
-
-  .contacto img {
-      padding: 0 20px;
-      width: 80%;
-      height: 80%;
-  }
-}
+/*////////////////////////// FIN DE DISEÑO GENERAL DEL CONTENEDOR /////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
