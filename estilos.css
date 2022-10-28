@@ -165,9 +165,9 @@ body {
 .boton {                                                 /* configuracion de botones  barra navegacion -DESCRIPCION RENGLON A RENGLON */
   margin-left: 20px;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   /*anchura, estilo y color borde*/
-  padding: 5px;
+  padding: 0px;
   /*espacio alrededor texto*/
   background-image: url(imagenes/button2.jpg);
   /*color botón*/
@@ -181,34 +181,11 @@ body {
   /*capitalización texto*/
   font-family: 'roboto', sans-serif;
   /*tipografía texto*/
-  font-size: 10px;
-  border-radius: 25px;
+  font-size: 11px;
+  border-radius: 5px;
   /*bordes redondos*/
 }
 
-.botonob {                                                 /* configuracion de botones  barra navegacion -DESCRIPCION RENGLON A RENGLON */
-  margin-left: 20px;
-  color: #ffffff;
-  border: 2px solid #a50707;
-  /*anchura, estilo y color borde*/
-  padding: 5px;
-  /*espacio alrededor texto*/
-  background-image: url(imagenes/button2.jpg);
-  /*color botón*/
-  background-repeat: no-repeat;
-  /* no repite imagen */
-  background-position: center;
-  /* cubre el area */
-  text-decoration: rgb(136, 5, 5);
-  /*decoración texto*/
-  text-transform: uppercase;
-  /*capitalización texto*/
-  font-family: 'roboto', sans-serif;
-  /*tipografía texto*/
-  font-size: 30px;
-  border-radius: 25px;
-  /*bordes redondos*/
-}
 
 #b1 {
 
