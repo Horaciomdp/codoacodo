@@ -12,12 +12,13 @@
   <header class="header">
     <div class="headerIzq"></div>
     <div class="egresados">
-        <h3>Codo a Codo en el mundo</h3>
-        <br>
-        <p>Estos son algunos de nuestros egresados</p>
+      <h3>Codo a Codo en el mundo</h3>
+      <br>
+      <p>Estos son algunos de nuestros egresados</p>
     </div>
     <div class="headerDer"></div>
   </header>
+
   <nav class="navbar">
     <div></div><br><br>
     <div id="b1"><a class="boton" href="index.html">Inicio</a></div><br><br><br><br>
@@ -30,6 +31,7 @@
         4.0</a></div><br><br><br><br>
     <div id="obelisco"></div>
   </nav>
+
   <aside class="sidebar">
     <h5>Principales Tecnologias</h5>
     <p>A traves de este aprenderas a usar las principales tecnologias del mercado para desarrollarte profesionalmente.
@@ -42,44 +44,36 @@
     <div id="tech6"></div>
     <div id="tech7"></div>
   </aside>
-  <article class="main4">
 
+  <article class="main4">
     <div class="cuatro">
       <h1>Egresados</h1>
       <br><br><br>
       <div class="container my-5 text-center">
         <button class="boton" onclick="traer()">Obtener</button>
         <br><br><br>
-        <div  id="contenido">
-            
+        <div id="contenido">
         </div>
-    </div>
+      </div>
 
-    <script>
+      <script>
         var contenido = document.querySelector('#contenido')
         function traer() {
-            fetch('https://randomuser.me/api/')
+          fetch('https://randomuser.me/api/')
             .then(res => res.json())
             .then(data => {
-                console.log(data.results['0'])
-                contenido.innerHTML = `
+              console.log(data.results['0'])
+              contenido.innerHTML = `
                 <img src="${data.results['0'].picture.large}" width="250px"> 
                 <h2>Nombre: ${data.results['0'].name.last}</h2>
                 `
             })
         } 
-    </script>
-
-
+      </script>
     </div>
-    
-      
-   
-
-
   </article>
-  <footer class="footer">
 
+  <footer class="footer">
     <div class="footerizq">
       <h4 style="font-style: italic ;">Contacto</h4>
       <br><br>
