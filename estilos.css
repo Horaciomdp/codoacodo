@@ -81,6 +81,18 @@ body {
   font-size: 9px;
 }
 
+.egresados h3 {                                           /* tipo de texto del parrafo "header central" */
+  width: 200px;
+  font-size: 16px;
+}
+
+
+.egresados p {                                           /* tipo de texto del parrafo "header central" */
+  width: 200px;
+  font-size: 10px;
+}
+
+
 /* primer linea span */
 .maquina-escribir {                                       /* efecto maquina escribir , solo primera linea */
   position: relative;
@@ -788,8 +800,14 @@ body {
     width: 190px;
     font-size: 10px;
   }
-
-  
+  .egresados h3 {                                           /* tipo de texto del parrafo "header central" */
+    width: 200px;
+    font-size: 20px;
+  }
+  .egresados p {                                           /* tipo de texto del parrafo "header central" */
+    width: 200px;
+    font-size: 12px;
+  }
 
   .boton {                                                       /* Redimensionado de propiedades de los botones para pantallas medianas */
     font-size: 15px;
@@ -1158,7 +1176,10 @@ background-color: #f08100;
     width: 300px;
     font-size: 18px;
   }
-
+  .egresados h3 {                                           /* tipo de texto del parrafo "header central" */
+    width: 200px;
+    font-size: 26px;
+  }
   .egresados p {                                           /* tipo de texto del parrafo "header central" */
     width: 200px;
     font-size: 14px;
