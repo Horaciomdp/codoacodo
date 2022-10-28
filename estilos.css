@@ -1182,6 +1182,12 @@ background-color: #f08100;
     font-size: 18px;
   }
 
+  .egresados p {                                           /* tipo de texto del parrafo "header central" */
+    width: 200px;
+    font-size: 14px;
+  }
+  
+
   .maquina-escribir {                                   /* Reformateo del efecto span para pantallas grandes y evitar deformacion de la ubicacion del efecto */
 
     position: relative;
@@ -1490,7 +1496,7 @@ background-color: #f08100;
 }
 
 .pyImg {
-  background-image: url(./imagenes/1_Py.png);
+  background-image: url("./imagenes/1_Py.png");
   background-size: cover;
 }
 
@@ -1673,7 +1679,15 @@ background-color: #f08100;
   justify-content: space-between;
 }
 
+.main4 {
+background-image: url(imagenes/vectorialblanco.jpg);
+background-position: center;}
 
+.main4 h2{
+  font-style: italic;
+  text-shadow: 2px 2px 1px rgb(221, 228, 191);
+ 
+  }
 
 /*///////////////////////////////// FIN AGREGADO GASTON /////////////////////////////////////////////////////////////////////*/
 }
