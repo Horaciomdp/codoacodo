@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Nuestros egresados en el mundo</title>
+        <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="grid-container2">
+    <header class="header">
+      <div class="headerIzq"></div>
+      <div id="egresados">
+          <h4>Codo a Codo en el mundo</h4>
+          <p>Estos son algunos de nuestros egresados</p>
+      </div>
+      <div class="headerDer"></div>
+    </header>
+    <nav class="navbar">
+      <div></div><br><br>
+      <div id="b1"><a class="boton" href="index.html">Inicio</a></div><br><br><br><br>
+      <div id="b1"><a class="boton" href="carreras.html">Carreras</a></div>
+      <br><br><br><br>
+      <div id="b1"><a class="boton" href="institucional.html" target="_blank">Institucional</a></div>
+      <br><br><br><br>
+      <div id="b1"><a class="boton" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Programa
+          4.0</a></div><br><br><br><br>
+         </nav>
+    <div class="obtener">
+        <button class="boton" onclick="traer()">Obtener</button>
+        <br><br><br>
+        <div id="contenido">
+            
+        </div>
+    </div>
+
+    <script>
+        var contenido = document.querySelector('#contenido')
+        function traer() {
+            fetch('https://randomuser.me/api/')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data.results['0'])
+                contenido.innerHTML = `
+                <img src="${data.results['0'].picture.large}" width="200px" class="img-fluid rounded-circle"> 
+                <p>Nombre: ${data.results['0'].name.last}</p>
+                `
+            })
+        } 
+    </script>
+<article></article>
+<footer class="footer">
+    <h3>Redes de la ciudad</h3>
+     <div class="redes">
+        <a href="https://www.facebook.com/GCBA"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/buenosaires"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://twitter.com/gcba"><i class="fa-brands fa-square-twitter"></i> Twitter</a>
+        <a href="https://www.youtube.com/user/GCBA"><i class="fa-brands fa-square-youtube"></i> Youtube</a>
+        <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+    </div>
+    <hr>
+    <div class="contacto">
+        <img src="./imagenes/ciudad-ba_fot_1.png" alt="Buenos Aires Ciudad">
+        <img src="./imagenes/ciudad-ba_fot_2.png" alt="Vamos Buenos Aires">
+    </div>
+</footer>
+</body>
+</html>
+
+
