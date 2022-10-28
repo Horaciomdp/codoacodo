@@ -27,14 +27,17 @@
       <br><br><br><br>
       <div id="b1"><a class="boton" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Programa
           4.0</a></div><br><br><br><br>
-         </nav>
-    <div class="obtener">
-        <button class="boton" onclick="traer()">Obtener</button>
+     
+    </nav>
+    <div class="uno">
+        <br><br><br>
+        <button class="botonob" onclick="traer()">Obtener</button>
         <br><br><br>
         <div id="contenido">
-            
+           
         </div>
-    </div>
+            </div>
+    
 
     <script>
         var contenido = document.querySelector('#contenido')
@@ -44,28 +47,25 @@
             .then(data => {
                 console.log(data.results['0'])
                 contenido.innerHTML = `
-                <img src="${data.results['0'].picture.large}" width="200px" class="img-fluid rounded-circle"> 
-                <p>Nombre: ${data.results['0'].name.last}</p>
+                <img src="${data.results['0'].picture.large}" width="350px" class="img-fluid rounded-circle"> 
+                <h1>Nombre: ${data.results['0'].name.last}</h1>
                 `
             })
         } 
     </script>
-<article></article>
-<footer class="footer">
-    <h3>Redes de la ciudad</h3>
-     <div class="redes">
-        <a href="https://www.facebook.com/GCBA"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-        <a href="https://www.instagram.com/buenosaires"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        <a href="https://twitter.com/gcba"><i class="fa-brands fa-square-twitter"></i> Twitter</a>
-        <a href="https://www.youtube.com/user/GCBA"><i class="fa-brands fa-square-youtube"></i> Youtube</a>
-        <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-    </div>
-    <hr>
-    <div class="contacto">
-        <img src="./imagenes/ciudad-ba_fot_1.png" alt="Buenos Aires Ciudad">
-        <img src="./imagenes/ciudad-ba_fot_2.png" alt="Vamos Buenos Aires">
-    </div>
-</footer>
+    <aside style="color: white;" >Estos son algunos de nuestros egresados que actualmente se encuentran trabajando alrededor del mundo en empresas de reconocimiento internacional.
+    Estos estudiantes pertenecen a la primera y segunda edicion de la capacitacion Codo a Codo.</aside>
+    
+    <footer class="footer">
+        <h5 style="color: white ;" >Redes de la ciudad</h5>
+         <div class="redes" >
+            <a href="https://www.facebook.com/GCBA"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/buenosaires"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/gcba"><i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="https://www.youtube.com/user/GCBA"><i class="fa-brands fa-square-youtube"></i> Youtube</a>
+            <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        </div>
+    </footer>
 </body>
 </html>
 
